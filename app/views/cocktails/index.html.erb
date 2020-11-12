@@ -1,1 +1,9 @@
 <h1>All Cocktails</h1>
+
+<div class="row pr-4 pl-4 pt-4 pb-0">
+      <% @cocktails.each do |cocktail| %>
+      <div class="col-12 col-md-12 col-lg-4">
+          <%= link_to "", cocktail_path(cocktail) %><%= cocktail.name %>
+        </div>
+      <% end %>
+</div>

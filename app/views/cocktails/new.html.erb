@@ -1,1 +1,9 @@
 <h1>Create new cocktail form</h1>
+
+<%= simple_form_for [@cocktail] do |f| %>
+  <%= f.input :name, placeholder: "Write the name here..."%>
+  <%= f.simple_fields_for :assets do |asset_fields| %>
+    <%= asset_fields.input :attachment, as: :file, input_html: {} %>
+<%- end %>
+  <%= f.button :submit, 'Add your cocktail', class:'btn btn-primary' %>
+<% end %>
