@@ -1,9 +1,26 @@
-<h1>All Cocktails</h1>
 
-<div class="row pr-4 pl-4 pt-4 pb-0">
-      <% @cocktails.each do |cocktail| %>
-      <div class="col-12 col-md-12 col-lg-4">
-          <%= link_to "", cocktail_path(cocktail) %><%= cocktail.name %>
+<div class="banner">
+    <div class="container">
+      <div class="d-flex align-items-center justify-content-between">
+        <h1 class="mb-4 mt-4 pt-4">Cocktails</h1>
+        <div class="btn mb-4 mt-4 pt-4">
+          <%= link_to "New cocktail", new_cocktail_path %>
         </div>
-      <% end %>
+      </div>
+    </div>
+</div>
+
+<div class="container">
+  <div class="row pr-4 pl-4 pt-4 pb-0">
+    <% @cocktails.each do |cocktail| %>
+  <div class="card" style="width: 18rem;">
+    <img class="card-img-top" src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title"><%= cocktail.name %></h5>
+      <!-- <a href="#" class="btn btn-primary">See recipe</a> -->
+      <%= link_to "See recipe", cocktail_path(cocktail)%>
+    </div>
+  </div>
+  <% end %>
+  </div>
 </div>
