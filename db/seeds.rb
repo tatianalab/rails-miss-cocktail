@@ -19,3 +19,12 @@ Ingredient.create(name: "soda")
 Ingredient.create(name: "bitter")
 
 puts 'Ingredients are created...'
+
+Cocktail.create(name: "Mojito")
+Cocktail.create(name: "Litttle drinky")
+Cocktail.create(name: "Yummy in tummy")
+Cocktail.create(name: "Jeudredi")
+Cocktail.create(name: "Let do this")
+Cocktail.create(name: "FckCvid")
+
+puts 'Cocktails are created...'
