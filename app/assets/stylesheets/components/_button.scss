@@ -1,0 +1,25 @@
+.btn-yellow{
+  background-color: $crayolayellow;
+  color:white;
+  border: 1px solid #4A4A4A;
+  padding: 8px 24px;
+  border-radius: 50px;
+  font-weight: lighter;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+.btn-yellow:hover {
+  transform: scale(1.1);
+  text-decoration: none;
+  transition: ease 1s;
+}
+
+.btn-yellow a:hover{
+  text-decoration: none;
+  color: white;
+}
+
+a{
+  color: $bluebrand;
+}
