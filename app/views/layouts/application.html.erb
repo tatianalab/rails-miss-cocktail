@@ -16,8 +16,8 @@
       <div class="container">
         <div class="d-flex align-items-center justify-content-between">
           <div class="col-8 d-flex align-items-start">
-          <h1>Miss</br><span class="logo-blue">Cocktail</span></h1>
-          <%= image_tag "logo.png", alt: "logo", width: 100%>
+           <h1>Miss</br><span class="logo-blue">Cocktail</span></h1>,
+          <%= image_tag "logo.png", alt: "logo", width: 100%><%= link_to 'all cocktails' , cocktails_path %>
           </div>
 
           <div class="col-4 d-flex justify-content-end">
@@ -32,3 +32,5 @@
     <%= yield %>
   </body>
 </html>
+
+
