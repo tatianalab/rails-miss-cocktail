@@ -25,6 +25,8 @@ Ingredient.create(name: "more rhum")
 Ingredient.create(name: "spices")
 Ingredient.create(name: "hot sauce")
 Ingredient.create(name: "chocolate syrup")
+Ingredient.create(name: "sexy time")
+Ingredient.create(name: "watermelon sugar")
 
 puts 'Ingredients are created...'
 
