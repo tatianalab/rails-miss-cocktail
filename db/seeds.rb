@@ -17,14 +17,15 @@ Ingredient.create(name: "tequila")
 Ingredient.create(name: "cane syrup")
 Ingredient.create(name: "soda")
 Ingredient.create(name: "bitter")
+Ingredient.create(name: "whisky")
+Ingredient.create(name: "happiness")
+Ingredient.create(name: "love")
+Ingredient.create(name: "dance")
+Ingredient.create(name: "more rhum")
+Ingredient.create(name: "spices")
+Ingredient.create(name: "hot sauce")
+Ingredient.create(name: "chocolate syrup")
 
 puts 'Ingredients are created...'
 
-Cocktail.create(name: "Mojito")
-Cocktail.create(name: "Litttle drinky")
-Cocktail.create(name: "Yummy in tummy")
-Cocktail.create(name: "Jeudredi")
-Cocktail.create(name: "Let do this")
-Cocktail.create(name: "FckCvid")
 
-puts 'Cocktails are created...'
