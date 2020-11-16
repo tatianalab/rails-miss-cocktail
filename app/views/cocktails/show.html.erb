@@ -7,6 +7,9 @@
         <div class="p-2 bd-highlight"><%= link_to new_cocktail_dose_path(@cocktail) do %>
           <i class="fas fa-pencil-alt"></i>
           <% end %>
+          <%= link_to new_cocktail_review_path(@cocktail) do %>
+          <i class="fas fa-heart"></i>
+          <% end %>
           <%= link_to "Delete", cocktail_path(@cocktail),
           method: :delete,
           data: { confirm: "Are you sure?" }  %></div>
@@ -15,6 +18,12 @@
       <div class="p-2 bd-highlight">
         <% @cocktail.doses.each do |dose| %>
         <p><%= dose.description.capitalize %> of <%= dose.ingredient.name.capitalize %></p>
+        <% end %>
+      </div>
+        <div class="p-2 bd-highlight">
+          <h4>Reviews:</h4>
+        <% @cocktail.reviews.each do |review| %>
+        <p><%= review.content %> </p>
         <% end %>
       </div>
 
@@ -26,3 +35,5 @@
 </div>
 
 </div>
+
+

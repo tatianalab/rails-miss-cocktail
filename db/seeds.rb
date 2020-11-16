@@ -8,16 +8,6 @@
 
 Ingredient.destroy_all
 puts 'Database is clean now 🍹'
-Ingredient.create(name: "lemon")
-Ingredient.create(name: "ice")
-Ingredient.create(name: "mint leaves")
-Ingredient.create(name: "vodka")
-Ingredient.create(name: "rhum")
-Ingredient.create(name: "tequila")
-Ingredient.create(name: "cane syrup")
-Ingredient.create(name: "soda")
-Ingredient.create(name: "bitter")
-Ingredient.create(name: "whisky")
 Ingredient.create(name: "happiness")
 Ingredient.create(name: "love")
 Ingredient.create(name: "dance")
@@ -27,6 +17,16 @@ Ingredient.create(name: "hot sauce")
 Ingredient.create(name: "chocolate syrup")
 Ingredient.create(name: "sexy time")
 Ingredient.create(name: "watermelon sugar")
+Ingredient.create(name: "Fromage en grain")
+Ingredient.create(name: "Mousse de foie gras")
+Ingredient.create(name: "A nice punch")
+Ingredient.create(name: "cream of joy")
+Ingredient.create(name: "tequila bang bang")
+Ingredient.create(name: "coconut water")
+Ingredient.create(name: "baby head aroma")
+Ingredient.create(name: "more tequila")
+Ingredient.create(name: "whisky")
+Ingredient.create(name: "cold beer")
 
 puts 'Ingredients are created...'
 
