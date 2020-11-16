@@ -1,0 +1,15 @@
+ <div class="banner fixed-top">
+      <div class="container">
+        <div class="d-flex align-items-center justify-content-between">
+          <div class="col-8 d-flex align-items-start">
+            <%= link_to root_path do %>
+           <h1 class="animate__animated animate__rotateIn">Miss</br><span class="logo-blue">Cocktail</span></h1>
+           <% end %>
+          <%= image_tag "logo.png", alt: "logo", class: "header-logo animate__animated animate__rotateIn" %>
+          </div>
+          <div class="col-4 d-flex justify-content-end">
+            <%= link_to "New cocktail", new_cocktail_path, class:"btn btn-yellow" %>
+          </div>
+        </div>
+      </div>
+</div>
