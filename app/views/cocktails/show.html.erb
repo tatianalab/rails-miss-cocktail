@@ -3,7 +3,7 @@
   <div class="row">
     <div class="col">
       <div class="d-flex flex-row bd-highlight mb-3 mt-5">
-        <div class="p-2 bd-highlight"><h1 class><%= @cocktail.name.capitalize %></h1></div>
+        <div class="p-2 bd-highlight show-title"><h1><%= @cocktail.name.capitalize %></h1></div>
         <div class="p-2 bd-highlight"><%= link_to new_cocktail_dose_path(@cocktail) do %>
           <i class="fas fa-pencil-alt"></i>
           <% end %>
@@ -17,7 +17,7 @@
       <div class="p-2 bd-highlight"><h4>To make a delicious <%= @cocktail.name.capitalize %> </br>you will need -></h4></div>
       <div class="p-2 bd-highlight">
         <% @cocktail.doses.each do |dose| %>
-        <p><%= dose.description.capitalize %> of <%= dose.ingredient.name.capitalize %></p>
+        <p><span id="dose"> <%= dose.description.capitalize %></span> of <%= dose.ingredient.name.capitalize %></p>
         <% end %>
       </div>
         <div class="p-2 bd-highlight">

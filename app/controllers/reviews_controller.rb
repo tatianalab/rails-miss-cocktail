@@ -11,7 +11,7 @@ class ReviewsController < ApplicationController
     @review.cocktail = @cocktail
     if @review.save
     # no need for app/views/doses/create.html.erb
-    redirect_to cocktail_path(@cocktail)
+      redirect_to cocktail_path(@cocktail)
     else
       render :new
     end
@@ -20,6 +20,6 @@ class ReviewsController < ApplicationController
   private
 
   def review_params
-    params.require(:review).permit(:content, :cocktail_id)
+    params.require(:review).permit(:content, :title, :name, :cocktail_id)
   end
 end
