@@ -1,18 +1,16 @@
 .btn-yellow{
   background-color: $crayolayellow;
-  color:$bluebrand;
-  border: 1px solid #4A4A4A;
+  color:$accent;
   padding: 8px 16px;
-  border-radius: 20px;
+  border-radius: 50px;
   font-weight: lighter;
-  opacity: 0.6;
+  opacity: 1;
   transition: opacity 0.3s ease;
-  // width: 50%;
   text-align: center;
 }
 
 .btn-yellow:hover {
-  transform: scale(1.1);
+  // transform: scale(1.1);
   text-decoration: none;
   transition: ease 0.5s;
 }
@@ -23,20 +21,20 @@
 }
 
 a{
-  color: $bluebrand;
+  color: $accent;
 }
 
 .btn-card{
   background-color: $crayolayellow;
-  color:$bluebrand;
-  border: 1px solid #4A4A4A;
-  padding: 4px 16px;
+  color:$accent;
+  padding: 8px 16px;
   border-radius: 20px;
   font-weight: lighter;
   opacity: 0.8;
   transition: opacity 0.3s ease;
   width: 50%;
   text-align: center;
+  font-size: 1rem;
 }
 .btn-card:hover {
   transform: scale(1.1);
